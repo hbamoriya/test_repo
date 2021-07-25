@@ -17,7 +17,7 @@
 {% endif %}
 {% if error_message %}<p><strong>{{error_message}}</strong></p>
 {% endif%}
-<from action = "{%url 'Newbie: your_choice' course.id%}"
+<from action = "{%url 'Newbie:yourchoice' course.id%}"
       method = "post">
     {% csrf_token %}
     {% for choice in course.details_set.all%}
